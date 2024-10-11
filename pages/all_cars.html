@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Car Filter by Color</title>
+</head>
+<body>
+
+  <h1>Filter Cars by Color</h1>
+
+
+  <label for="filterInput">Filter by color:</label>
+  <select id="filterInput">
+    <option value="">All</option>
+    <option value="white">white</option>
+    <option value="grey">grey</option>
+    <option value="yellow">yellow</option>
+    <option value="blue">blue</option>
+    <option value="Gray-green">Gray-green</option>
+  </select>
+
+  <label for="filterInput">Filter by brand:</label>
+  <select id="filterInput2">
+    <option value="">All</option>
+    <option value="mercedes">mercedes</option>
+    <option value="dacia">dacia</option>
+    <option value="renault">renault</option>
+    <option value="Maserati">Maserati</option>
+    <option value="volsvagen">volsvagen</option>
+  </select>
+
+ 
+  <div class="card-container">
+    <div class="card" data-color="white" brand-name = "Maserati">
+      <h2 class="car_title">Maserati</h2>
+      <p class="car_color">Color: white</p>
+      <img src="../images/Maserati.jpg" alt="Car" />
+    </div>
+    
+    <div class="card" data-color="grey" brand-name = "Dacia">
+      <h2 class="car_title">Dacia logan</h2>
+      <p class="car_color">Color: grey</p>
+      <img src="../images/Dacia.jpg" alt="Car" />
+    </div>
+    
+    <div class="card" data-color="yellow" brand-name = "renault">
+      <h2 class="car_title">renault 208</h2>
+      <p class="car_color">Color: yellow</p>
+      <img src="../images/renault.jpg" alt="Car" />
+    </div>
+    
+    <div class="card" data-color="blue" brand-name = "volsvagen">
+      <h2 class="car_title">golf 7</h2>
+      <p class="car_color">Color: blue</p>
+      <img src="../images/golf7.jpg" alt="Car" />
+    </div>
+
+    <div class="card" data-color="Gray-green" brand-name = "mercedes">
+      <h2 class="car_title">mercedes wagon</h2>
+      <p class="car_color">Color: Gray-green</p>
+      <img src="../images/mercedes.jpg" alt="Car" />
+    </div>
+    <div class="card" data-color="blue" brand-name = "mercedes">
+      <h2 class="car_title">mercedes amg</h2>
+      <p class="car_color">Color: blue</p>
+      <img src="../images/mercedes2.jpg" alt="Car" />
+    </div>
+
+  </div>
+
+
+
+
+
+
+</body>
+<script src="../index.js"></script>
+</html>

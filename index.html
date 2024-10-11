@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCar</title>
+    <meta name="description" content="Rent cars online">
+    <meta name="keywords" content="cars, rent, online">
+    <meta name="author" content="Hamza Bouchikhi">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="overflow-x: hidden">
+    
+    <header class="header">
+        <nav class="navbar container">
+            <img src="images/logo.svg" alt="GoCar logo" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/advantages.html">Advantages</a></li>
+                <li><a href="pages/map.html">Map</a></li>
+                <li><a href="pages/contact.html">contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="header"></div>
+    <div id="hero"></div>
+   
+
+    <script>
+        function loadHTML(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        }
+
+
+        loadHTML('hero', 'pages/hero.html');
+        loadHTML('about', 'pages/about.html');
+        loadHTML('advantages', 'pages/advantages.html');
+        loadHTML('gallery', 'pages/gallery.html');
+        loadHTML('map', 'pages/map.html');
+        loadHTML('footer', 'pages/footer.html');
+        loadHTML('contact', 'pages/contact.html');
+    </script>
+</body>
+</html>
